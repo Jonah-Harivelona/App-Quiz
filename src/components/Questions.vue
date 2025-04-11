@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-    import {computed, ref} from "vue"
+    import {computed, ref, watch} from "vue"
 
     const answer = ref(null)
     const emits = defineEmits(['answer'])
@@ -28,6 +28,7 @@
 
     const hasAnswer = computed(() => answer.value !== null)
 
+   
 </script>
 
 
